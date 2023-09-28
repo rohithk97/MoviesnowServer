@@ -27,3 +27,4 @@ sqlparse
 tzdata
 tzlocal
 urllib3
+gunicorn
