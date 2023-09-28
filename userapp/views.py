@@ -15,6 +15,7 @@ from rest_framework.decorators import action
 # Create your views here.
 class AuthView(TokenObtainPairView):
     def post(self, request, *args, **kwargs):
+        print('inside the token generator')
         response = super().post(request, *args, **kwargs)   
         token = response.data['access']
         refresh=response.data['access']
