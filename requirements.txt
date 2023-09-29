@@ -28,3 +28,5 @@ tzdata
 tzlocal
 urllib3
 gunicorn
+cloudinary
+django-cloudinary-storage
