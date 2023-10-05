@@ -178,17 +178,17 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 MEDIA_URL = '/media/'
-# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# CLOUDINARY_ALLOWED_FORMATS = [
-#     'jpg', 'jpeg', 'png', 'gif',  # Add other image formats as needed
-#     'pdf', 'doc', 'docx',         # Add DOC and PDF formats
-# ]
+CLOUDINARY_ALLOWED_FORMATS = [
+    'jpg', 'jpeg', 'png', 'gif',  # Add other image formats as needed
+    'pdf', 'doc', 'docx',         # Add DOC and PDF formats
+]
 
-# CLOUDINARY_STORAGE = {
-#     'CLOUD_NAME': env('CLOUD_NAME'),
-#     'API_KEY': env('CLOUDINARY_API_KEY'),
-#     'API_SECRET': env('CLOUDINARY_API_SECRET'),
-# }
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': env('CLOUD_NAME'),
+    'API_KEY': env('CLOUDINARY_API_KEY'),
+    'API_SECRET': env('CLOUDINARY_API_SECRET'),
+}
 
